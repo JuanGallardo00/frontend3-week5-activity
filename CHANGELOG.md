@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/JuanGallardo00/frontend3-week5-activity/compare/v1.0.0...v1.0.1) (2026-04-16)
+
+
+### Bug Fixes
+
+* apply prettier formatting to Navbar component ([ec4d186](https://github.com/JuanGallardo00/frontend3-week5-activity/commit/ec4d186be5c237e626b8a5f23a0c65a1ef9bfda9))
+
 # 1.0.0 (2026-04-16)
 
 
