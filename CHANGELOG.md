@@ -1,3 +1,10 @@
+# 1.0.0 (2026-04-16)
+
+
+### Features
+
+* migrate Navbar to Material UI AppBar component ([0683b2c](https://github.com/JuanGallardo00/frontend3-week5-activity/commit/0683b2cbd3073435d4e17a7e9cc9f291256abcac))
+
 # [1.2.0](https://github.com/JosephRangel/frontend3-week5-activity/compare/v1.1.0...v1.2.0) (2026-04-13)
 
 
