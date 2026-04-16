@@ -1,23 +1,33 @@
-import { Link } from 'react-router-dom';
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import HomeIcon from "@mui/icons-material/Home";
+import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <Link to="/" className="nav-logo">
-        🛒 TechStore
-      </Link>
-
-      <div className="nav-links">
-        {/* NUNCA usamos <a> en React. <Link> intercepta el clic y cambia
-            la URL silenciosamente, evitando que el navegador se reinicie */}
-        <Link to="/" className="nav-link">
-          Catálogo
-        </Link>
-        <Link to="/cart" className="nav-link">
-          Mi Carrito
-        </Link>
-      </div>
-    </nav>
+    <AppBar position="sticky" sx={{ backgroundColor: "#1a1a2e" }}>
+      <Toolbar>
+        <SportsEsportsIcon sx={{ mr: 1 }} />
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+            TechStore
+          </Link>
+        </Typography>
+        <Box>
+          <Button color="inherit" component={Link} to="/" startIcon={<HomeIcon />}>
+            Catálogo
+          </Button>
+          <Button color="inherit" component={Link} to="/cart" startIcon={<ShoppingCartIcon />}>
+            Mi Carrito
+          </Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
 
